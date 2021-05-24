@@ -1,0 +1,134 @@
+#main{
+    background: rgb(254, 190, 59);
+    margin: 40px;
+    padding: 30px 30px 30px 40px;
+    border-style: solid;
+    border-color: rgb(254, 25, 0);
+    border-width: 8px;
+    display: block;
+    width: auto;
+    min-width: auto;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .body-background{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYf_fx7dyN1knahCmX6D_Vk6WUN3VXlqN4w&usqp=CAU);
+  }
+  #title{
+    color: white;
+    text-align: center;
+    font-size: clamp(5px, 60px, 70px);
+    font-family: lobster;
+    margin: 5px;
+    opacity: 1.0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  #description{
+    color: white;
+    text-align: center;
+    font-family: lobster;
+    font-size: clamp(5px, 30px, 30px);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+  }
+  .header-container{
+    background: url(https://i.pinimg.com/originals/24/4f/a4/244fa492f1d233c3eeb48291f671e87b.jpg);
+    border-radius: 20px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+    min-width: auto;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .label-form{
+    color: white;
+    display: block;
+    font-size: 35px;
+    font-family: Orelega One;
+    padding: 10px 40px 30px 0px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;  
+  }
+  #dropdown{
+    height: 40px;
+    font-size: 24px;
+    font-family: Merriweather;
+    width: 100%;
+    min-width: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 8px;
+  }
+  .input-ch-ra{
+    color: red;
+    font-size: 25px;
+    font-family: Merriweather;
+     -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+    margin-right: auto;
+  
+  }
+  .p-rc{
+    font-family: Orelega One;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    color:white;
+    font-size: 35px;
+     padding: 10px 40px 0px 0px;
+  }
+  small{
+    color: white;
+    font-size: 25px;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+  }
+  .input-text{
+    height: 30px;
+    font-size: 24px;
+    font-family: Merriweather;
+    width: 100%;
+    min-width: auto;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px 8px;
+  }
+  textarea{
+   border-radius: 5px;
+   box-shadow: 2px 2px 2px #999;
+   height: 100px;
+   width: 100%;
+   max-width: 500px;
+   font-size: 15px;
+   font-family: Merriweather;
+  }
+  #submit{
+    color: white;
+    background: rgb(224, 25, 0);
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    padding: 5px;
+    margin: 40px auto 10px auto;
+    font-family: orelega one;
+    font-size: 20px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                  inset -2px -2px 3px rgba(0, 0, 0, .6);
+    text-shadow: 3px 3px 3px #000;
+    border-radius: 8px;
+    border-style: none;
+  }
+  #submit:hover{
+    background: rgb(254, 25, 0);
+  }
+  #submit:active{
+      box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                  inset 2px 2px 3px rgba(0, 0, 0, .6);
+  }

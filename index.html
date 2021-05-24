@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Orelega+One&display=swap" rel="stylesheet">
+    <title>Survey Form: Pizzaria</title>
+</head>
+<body class="body-background">
+    <div >
+        <header class="header-container">
+          <h1 id="title">La Pepperroni Pizza</h1>
+          <p id="description">Thank you for helping us improve our establishment.
+          </p>
+        </header>
+        <main id="main">
+          <form id="survey-form">
+            <div>
+            <label class="label-form" for="name" id="name-label">*Name:</label>
+            <input class="input-text"
+                   name="name" 
+                   id="name" 
+                   placeholder="Enter your name" 
+                   type="text" 
+                   required
+            >
+            </div>
+            <div>
+            <label class="label-form" for="email" id="email-label">*Email:</label>
+            <input class="input-text"
+                   name="email" 
+                   id="email" 
+                   placeholder="Enter your email" 
+                   type="email" required>
+            </div>
+            
+            <div>
+            <label class="label-form" for="phone">*Phone Number:</label>
+            <input class="input-text"
+                   type="tel" 
+                   id="phone" 
+                   name="phone" 
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                   placeholder="Enter your phone number" 
+                   required
+            >
+            <br>
+            <small >Format: 123-456-7890</small>
+            </div>
+           <div>
+              <label for="many-pizza-month" class="label-form"  id="number-label">How many times in the month you eat a pizza?</label>
+            <input class="input-text"
+                   name="many-pizza-month" 
+                   id="number" 
+                   type="number" 
+                   placeholder="Don't worry... how many?" 
+                   min="0" 
+                   max="20"
+            >
+           </div>
+                <p class="p-rc">*Have you ever tasted our pizza?</p>
+                
+            <div class="input-ch-ra">
+              <input 
+                     type="radio" 
+                     value="delicious" 
+                     name="tasted"
+                     >
+                <label for="delicious">It's really delicious!</label>
+            </div>
+            <div class="input-ch-ra">
+              <input 
+                     type="radio" 
+                     value="will-prove" 
+                     name="tasted" 
+                     required
+                     >
+              <label for="will-prove">I'll prove!</label>
+            </div>
+            <div class="input-ch-ra">
+             <input 
+                    type="radio" 
+                    value="havent-tasted" 
+                    name="tasted" 
+                    required
+                    >
+              <label for="havent-tasted" required>I haven't tasted it yet.</label>
+            </div>
+            <div>
+              <label for="most-important" class="label-form">*What's the most important thing in one pizzeria?</label>
+              <select name="most-important" id="dropdown" >
+                <option value="" 
+                        required 
+                        selected 
+                        disabled
+                        >--Please choose a option--</option>
+                <option value="lot-chesse">Pizzas with a lot of cheese</option>
+                <option value="flavors">Wide variety of flavors</option>
+                <option value="Delivery">Fast delivery</option>
+                <option value="Low-preices">Low prices</option>
+                <option value="all">All options above</option>
+              </select>
+                </div>
+            <p class="p-rc">What are yours favorites flavors?</p>
+              <div class="input-ch-ra">
+              <input 
+                     value="Cheese Pizza" 
+                     type="checkbox"
+                     >
+               <label for="Cheese Pizza">Cheese Pizza</label>
+              </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Veggie Pizza"
+                   type="checkbox"
+                   >
+            <label for="Veggie Pizza">Veggie Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Pepperoni Pizza"
+                   type="checkbox"
+                   >
+            <label for="Pepperoni Pizza">Pepperoni Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Meat Pizza"
+                   type="checkbox"
+                   >
+            <label for="Meat Pizza">Meat Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Margherita Pizza"
+                   type="checkbox"
+                   >
+            <label for="Margherita Pizza">Margherita Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="BBQ Chicken Pizza"
+                   type="checkbox"
+                   >
+            <label for="BBQ Chicken Pizza">BBQ Chicken Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Hawaiian Pizza"
+                   type="checkbox"
+                   >
+            <label for="Hawaiian Pizza">Hawaiian Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Buffalo Pizza"
+                   type="checkbox"
+                   >
+            <label for="Buffalo Pizza">Buffalo Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Supreme Pizza"
+                   type="checkbox"
+                   >
+            <label for="Supreme Pizza">Supreme Pizza</label>
+            </div>
+            <div class="input-ch-ra">
+            <input 
+                   value="Mushrooms Pizza"
+                   type="checkbox"
+                   >
+            <label for="Mushrooms Pizza">Mushrooms Pizza</label>
+            </div>
+            <div>
+              <label for="areatext" class="label-form">If you have any flavor advice or complaint, you can write below:</label>
+              <textarea
+                        name="areatext" 
+                        placeholder="Don't be shy. Please give your opinion."
+                        ></textarea>
+            </div>
+            <div>
+              <button type="submit" id="submit">submit</button>
+            </div>
+            </div>
+          </form>
+        </main>
+</body>
+</html>
